@@ -1,0 +1,58 @@
+openapi: 3.0.3
+info:
+  title: Hello API
+  version: 1.0.0
+  description: A simple API that responds with a personalized hello greeting.
+
+servers:
+  - url: /
+    description: Default server
+
+paths:
+  /hello:
+    get:
+      summary: Get hello greeting
+      description: Returns a hello greeting for the given name in JSON format. Defaults to "Hello, World!" when no name is provided.
+      operationId: getHello
+      parameters:
+        - name: name
+          in: query
+          required: false
+          description: Name to greet. When omitted or blank, the greeting defaults to "World".
+          schema:
+            type: string
+            example: "Ada"
+      responses:
+        '200':
+          description: Successful response with hello message
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - message
+                properties:
+                  message:
+                    type: string
+                    example: "Hello, Ada!"
+              examples:
+                helloName:
+                  value:
+                    message: "Hello, Ada!"
+                helloWorld:
+                  value:
+                    message: "Hello, World!"
+
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Returns the health status of the service.
+      operationId: getHealth
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "OK"
