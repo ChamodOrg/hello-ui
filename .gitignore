@@ -6,6 +6,10 @@ dist/
 *.exe
 server
 
+# Local-only workspace shield (see go.work comment)
+go.work
+go.work.sum
+
 # Test artifacts
 test-results/
 playwright-report/
