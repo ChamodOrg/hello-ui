@@ -102,17 +102,17 @@ Generated: 2026-07-06
 
 ---
 
-## AC-006-a
+## AC-006-a (re-authored for issue #9)
 
-**Must:** Clicking the button with an empty text box results in a greeting of 'Welcome, Stranger!'.
+**Must:** Clicking the button with an empty text box results in a greeting of 'Hello, World!'.
 **Target:** hello-web (browser)
 **Steps:**
 1. Navigate to http://localhost:5173.
 2. Leave the name input empty.
 3. Click the "Say Hello" button.
-4. Wait for the element with role "status".
-**Expected assertion:** The element with role "status" contains "Welcome, Stranger!".
-**Note:** The live API returns "Hello, World!" when name is empty — this test is expected to FAIL.
+4. Wait for the element with role "status" to appear.
+**Expected assertion:** The element with role "status" contains "Hello, World!".
+**Note:** Criterion updated from "Welcome, Stranger!" (issue #1) to "Hello, World!" (issue #9) to match the actual API behaviour.
 
 ---
 
