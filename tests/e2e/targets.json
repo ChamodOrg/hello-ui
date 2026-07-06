@@ -1,0 +1,7 @@
+{
+  "targets": {
+    "hello-web": "http://localhost:5173",
+    "hello-api": "http://localhost:9090"
+  },
+  "primary": "hello-web"
+}

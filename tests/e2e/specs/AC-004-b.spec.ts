@@ -1,0 +1,10 @@
+import { test, expect } from "@playwright/test";
+import { target } from "../lib/targets";
+
+test("AC-004-b: The API response contains a 'message' field", async ({ request }) => {
+  const response = await request.get(`${target("hello-api")}/hello?name=Test`);
+  expect(response.ok()).toBeTruthy();
+  const body = await response.json();
+  expect(body).toHaveProperty("message");
+  expect(typeof body.message).toBe("string");
+});
