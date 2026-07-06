@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-06",
+  "issue": "https://github.com/ChamodOrg/hello-ui/issues/1",
+  "result": "pass",
+  "summary": {
+    "e2e": { "total": 10, "passed": 10, "failed": 0, "skipped": 0 },
+    "manual": { "total": 0 },
+    "scenario": { "total": 0 }
+  },
+  "criteria": [
+    { "id": "AC-001-a", "method": "e2e", "result": "pass", "must": "A text box for entering a name is visible on the web page" },
+    { "id": "AC-001-b", "method": "e2e", "result": "pass", "must": "A 'Say Hello' button is visible on the web page" },
+    { "id": "AC-002-a", "method": "e2e", "result": "pass", "must": "Clicking the 'Say Hello' button triggers a request to the API with the entered name" },
+    { "id": "AC-003-a", "method": "e2e", "result": "pass", "must": "The API returns a response containing 'Hello, <name>!' where <name> is the provided name" },
+    { "id": "AC-004-a", "method": "e2e", "result": "pass", "must": "The API response is valid JSON" },
+    { "id": "AC-004-b", "method": "e2e", "result": "pass", "must": "The API response contains a 'message' field" },
+    { "id": "AC-005-a", "method": "e2e", "result": "pass", "must": "The greeting from the API response is displayed on the web page" },
+    { "id": "AC-006-a", "method": "e2e", "result": "pass", "must": "Clicking the button with an empty text box results in a greeting of 'Hello, World!'" },
+    { "id": "AC-007-a", "method": "e2e", "result": "pass", "must": "The API provides a single endpoint for greeting requests" },
+    { "id": "AC-008-a", "method": "e2e", "result": "pass", "must": "API requests succeed without providing authentication credentials" }
+  ],
+  "manual": [],
+  "scenario": []
+}
