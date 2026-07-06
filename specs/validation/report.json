@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "issue": 1,
+  "commit": "295df5683471f5e42a927fe54d0cbee31992b67f",
+  "generatedAt": "2026-07-06T16:32:58.700Z",
+  "playwrightVersion": "1.61.1",
+  "totals": {
+    "e2e": {
+      "total": 10,
+      "pass": 10,
+      "fail": 0,
+      "notRun": 0
+    },
+    "manual": 0,
+    "scenario": 0
+  },
+  "criteria": [
+    {
+      "id": "AC-001-a",
+      "requirementId": "REQ-001",
+      "must": "A text box for entering a name is visible on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-001-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 299,
+      "failure": null
+    },
+    {
+      "id": "AC-001-b",
+      "requirementId": "REQ-001",
+      "must": "A 'Say Hello' button is visible on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-001-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 197,
+      "failure": null
+    },
+    {
+      "id": "AC-002-a",
+      "requirementId": "REQ-002",
+      "must": "Clicking the 'Say Hello' button triggers a request to the API with the entered name",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-002-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 272,
+      "failure": null
+    },
+    {
+      "id": "AC-003-a",
+      "requirementId": "REQ-003",
+      "must": "The API returns a response containing 'Hello, <name>!' where <name> is the provided name",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-003-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 22,
+      "failure": null
+    },
+    {
+      "id": "AC-004-a",
+      "requirementId": "REQ-004",
+      "must": "The API response is valid JSON",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-004-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 11,
+      "failure": null
+    },
+    {
+      "id": "AC-004-b",
+      "requirementId": "REQ-004",
+      "must": "The API response contains a 'message' field",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-004-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 9,
+      "failure": null
+    },
+    {
+      "id": "AC-005-a",
+      "requirementId": "REQ-005",
+      "must": "The greeting from the API response is displayed on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-005-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 249,
+      "failure": null
+    },
+    {
+      "id": "AC-006-a",
+      "requirementId": "REQ-006",
+      "must": "Clicking the button with an empty text box results in a greeting of 'Hello, World!'",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-006-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 240,
+      "failure": null
+    },
+    {
+      "id": "AC-007-a",
+      "requirementId": "REQ-007",
+      "must": "The API provides a single endpoint for greeting requests",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-007-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 17,
+      "failure": null
+    },
+    {
+      "id": "AC-008-a",
+      "requirementId": "REQ-008",
+      "must": "API requests succeed without providing authentication credentials",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/AC-008-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 9,
+      "failure": null
+    }
+  ]
+}
