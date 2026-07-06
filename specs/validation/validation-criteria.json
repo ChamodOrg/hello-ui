@@ -74,11 +74,11 @@
     },
     {
       "id": "REQ-006",
-      "statement": "When no name is entered, the greeting defaults to 'Hello, World!'",
+      "statement": "When no name is entered, the greeting defaults to 'Welcome, Stranger!'",
       "criteria": [
         {
           "id": "AC-006-a",
-          "must": "Clicking the button with an empty text box results in a greeting of 'Hello, World!'",
+          "must": "Clicking the button with an empty text box results in a greeting of 'Welcome, Stranger!'",
           "method": "e2e",
           "covered": false
         }
