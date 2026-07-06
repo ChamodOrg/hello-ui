@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "issue": 1,
+  "commit": "20466ab105f5291c312ade2052319f8f9e179af1",
+  "generatedAt": "2026-07-06T18:05:33.635Z",
+  "playwrightVersion": "1.61.1",
+  "totals": {
+    "e2e": {
+      "total": 10,
+      "pass": 9,
+      "fail": 1,
+      "notRun": 0
+    },
+    "manual": 0,
+    "scenario": 0
+  },
+  "criteria": [
+    {
+      "id": "AC-001-a",
+      "requirementId": "REQ-001",
+      "must": "A text box for entering a name is visible on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-001-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 229,
+      "failure": null
+    },
+    {
+      "id": "AC-001-b",
+      "requirementId": "REQ-001",
+      "must": "A 'Say Hello' button is visible on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-001-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 307,
+      "failure": null
+    },
+    {
+      "id": "AC-002-a",
+      "requirementId": "REQ-002",
+      "must": "Clicking the 'Say Hello' button triggers a request to the API with the entered name",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-002-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 327,
+      "failure": null
+    },
+    {
+      "id": "AC-003-a",
+      "requirementId": "REQ-003",
+      "must": "The API returns a response containing 'Hello, <name>!' where <name> is the provided name",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-003-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 22,
+      "failure": null
+    },
+    {
+      "id": "AC-004-a",
+      "requirementId": "REQ-004",
+      "must": "The API response is valid JSON",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-004-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 12,
+      "failure": null
+    },
+    {
+      "id": "AC-004-b",
+      "requirementId": "REQ-004",
+      "must": "The API response contains a 'message' field",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-004-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 10,
+      "failure": null
+    },
+    {
+      "id": "AC-005-a",
+      "requirementId": "REQ-005",
+      "must": "The greeting from the API response is displayed on the web page",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-005-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 438,
+      "failure": null
+    },
+    {
+      "id": "AC-006-a",
+      "requirementId": "REQ-006",
+      "must": "Clicking the button with an empty text box results in a greeting of 'Welcome, Stranger!'",
+      "method": "e2e",
+      "status": "fail",
+      "spec": "tests/e2e/specs/AC-006-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 10433,
+      "failure": {
+        "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByRole('status')\nExpected: \"Welcome, Stranger!\"\nReceived: \"Hello, World!\"\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 10000ms\n  - waiting for getByRole('status')\n    24 × locator resolved to <p role=\"status\">Hello, World!</p>\n       - unexpected value \"Hello, World!\"\n",
+        "location": "AC-006-a.spec.ts:4"
+      }
+    },
+    {
+      "id": "AC-007-a",
+      "requirementId": "REQ-007",
+      "must": "The API provides a single endpoint for greeting requests",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-007-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 46,
+      "failure": null
+    },
+    {
+      "id": "AC-008-a",
+      "requirementId": "REQ-008",
+      "must": "API requests succeed without providing authentication credentials",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-008-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 12,
+      "failure": null
+    }
+  ],
+  "warnings": [
+    "AC-001-a: raw locator() usage in tests/e2e/specs/AC-001-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder",
+    "AC-002-a: raw locator() usage in tests/e2e/specs/AC-002-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder",
+    "AC-005-a: raw locator() usage in tests/e2e/specs/AC-005-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder"
+  ]
+}
