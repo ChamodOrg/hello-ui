@@ -1,3 +1,4 @@
+// spec: test-plan.md#AC-006-a
 import { test, expect } from "@playwright/test";
 
 test("AC-006-a: Clicking the button with an empty text box results in a greeting of 'Hello, World!'", async ({ page }) => {

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "issue": 1,
-  "commit": "295df5683471f5e42a927fe54d0cbee31992b67f",
-  "generatedAt": "2026-07-06T17:04:50.744Z",
+  "commit": "59451073d28d3aabe177ab087ae1e5196c74bad7",
+  "generatedAt": "2026-07-06T17:50:49.914Z",
   "playwrightVersion": "1.61.1",
   "totals": {
     "e2e": {
@@ -25,7 +25,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 213,
+      "durationMs": 336,
       "failure": null
     },
     {
@@ -38,7 +38,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 187,
+      "durationMs": 215,
       "failure": null
     },
     {
@@ -51,7 +51,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 254,
+      "durationMs": 243,
       "failure": null
     },
     {
@@ -64,7 +64,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 23,
+      "durationMs": 24,
       "failure": null
     },
     {
@@ -77,7 +77,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 11,
+      "durationMs": 13,
       "failure": null
     },
     {
@@ -90,7 +90,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 11,
+      "durationMs": 10,
       "failure": null
     },
     {
@@ -103,7 +103,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 252,
+      "durationMs": 278,
       "failure": null
     },
     {
@@ -116,7 +116,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 228,
+      "durationMs": 251,
       "failure": null
     },
     {
@@ -129,7 +129,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 15,
+      "durationMs": 16,
       "failure": null
     },
     {
@@ -142,7 +142,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 10,
+      "durationMs": 12,
       "failure": null
     }
   ]

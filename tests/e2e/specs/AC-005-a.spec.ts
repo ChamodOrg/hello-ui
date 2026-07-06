@@ -1,3 +1,4 @@
+// spec: test-plan.md#AC-005-a
 import { test, expect } from "@playwright/test";
 
 test("AC-005-a: The greeting from the API response is displayed on the web page", async ({ page }) => {

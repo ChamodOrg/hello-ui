@@ -1,3 +1,4 @@
+// spec: test-plan.md#AC-007-a
 import { test, expect } from "@playwright/test";
 import { target } from "../lib/targets";
 
