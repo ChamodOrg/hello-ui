@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "issue": 1,
-  "commit": "44333d94bc1d2bb7a8de5dbd2b1bb2023417bde4",
-  "generatedAt": "2026-07-06T16:36:09.475Z",
+  "commit": "295df5683471f5e42a927fe54d0cbee31992b67f",
+  "generatedAt": "2026-07-06T17:04:50.744Z",
   "playwrightVersion": "1.61.1",
   "totals": {
     "e2e": {
@@ -25,7 +25,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 258,
+      "durationMs": 213,
       "failure": null
     },
     {
@@ -38,7 +38,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 200,
+      "durationMs": 187,
       "failure": null
     },
     {
@@ -51,7 +51,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 250,
+      "durationMs": 254,
       "failure": null
     },
     {
@@ -77,7 +77,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 12,
+      "durationMs": 11,
       "failure": null
     },
     {
@@ -90,7 +90,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 9,
+      "durationMs": 11,
       "failure": null
     },
     {
@@ -103,7 +103,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 246,
+      "durationMs": 252,
       "failure": null
     },
     {
@@ -116,7 +116,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 254,
+      "durationMs": 228,
       "failure": null
     },
     {
@@ -129,7 +129,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 16,
+      "durationMs": 15,
       "failure": null
     },
     {
@@ -142,7 +142,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 8,
+      "durationMs": 10,
       "failure": null
     }
   ]
