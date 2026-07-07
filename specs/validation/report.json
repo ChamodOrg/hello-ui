@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "issue": 9,
-  "commit": "1f3744c845d4d9eec6bd6c8021a799a5e35e3356",
-  "generatedAt": "2026-07-06T18:28:00.520Z",
+  "issue": 11,
+  "commit": "5cae109b7ebaca69da0d4b2136e8f558f2a1a265",
+  "generatedAt": "2026-07-07T10:37:07.701Z",
   "playwrightVersion": "1.61.1",
   "totals": {
     "e2e": {
       "total": 10,
-      "pass": 10,
-      "fail": 0,
+      "pass": 9,
+      "fail": 1,
       "notRun": 0
     },
     "manual": 0,
@@ -25,7 +25,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 186,
+      "durationMs": 244,
       "failure": null
     },
     {
@@ -38,7 +38,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 150,
+      "durationMs": 206,
       "failure": null
     },
     {
@@ -51,7 +51,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 190,
+      "durationMs": 251,
       "failure": null
     },
     {
@@ -64,7 +64,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 19,
+      "durationMs": 23,
       "failure": null
     },
     {
@@ -77,7 +77,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 8,
+      "durationMs": 10,
       "failure": null
     },
     {
@@ -90,7 +90,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 8,
+      "durationMs": 9,
       "failure": null
     },
     {
@@ -100,10 +100,10 @@
       "method": "e2e",
       "status": "pass",
       "spec": "tests/e2e/specs/AC-005-a.spec.ts",
-      "healed": false,
-      "healAttempts": 0,
+      "healed": true,
+      "healAttempts": 1,
       "flaky": false,
-      "durationMs": 222,
+      "durationMs": 258,
       "failure": null
     },
     {
@@ -111,13 +111,16 @@
       "requirementId": "REQ-006",
       "must": "Clicking the button with an empty text box results in a greeting of 'Hello, World!'",
       "method": "e2e",
-      "status": "pass",
+      "status": "fail",
       "spec": "tests/e2e/specs/AC-006-a.spec.ts",
-      "healed": false,
-      "healAttempts": 0,
+      "healed": true,
+      "healAttempts": 1,
       "flaky": false,
-      "durationMs": 211,
-      "failure": null
+      "durationMs": 10333,
+      "failure": {
+        "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  locator('.greeting')\nExpected: \"Hello, World!\"\nReceived: \"Hello, !\"\nTimeout:  10000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 10000ms\n  - waiting for locator('.greeting')\n    23 × locator resolved to <p class=\"greeting\">Hello, !</p>\n       - unexpected value \"Hello, !\"\n",
+        "location": "AC-006-a.spec.ts:4"
+      }
     },
     {
       "id": "AC-007-a",
@@ -129,7 +132,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 11,
+      "durationMs": 44,
       "failure": null
     },
     {
@@ -142,13 +145,14 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 6,
+      "durationMs": 14,
       "failure": null
     }
   ],
   "warnings": [
     "AC-001-a: raw locator() usage in tests/e2e/specs/AC-001-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder",
     "AC-002-a: raw locator() usage in tests/e2e/specs/AC-002-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder",
-    "AC-005-a: raw locator() usage in tests/e2e/specs/AC-005-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder"
+    "AC-005-a: raw locator() usage in tests/e2e/specs/AC-005-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder",
+    "AC-006-a: raw locator() usage in tests/e2e/specs/AC-006-a.spec.ts — prefer getByRole/getByLabel/getByPlaceholder"
   ]
 }
