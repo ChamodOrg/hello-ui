@@ -14,9 +14,6 @@ type helloResponse struct {
 
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	name := strings.TrimSpace(r.URL.Query().Get("name"))
-	if name == "" {
-		name = "World"
-	}
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	if err := json.NewEncoder(w).Encode(helloResponse{Message: fmt.Sprintf("Hello, %s!", name)}); err != nil {
