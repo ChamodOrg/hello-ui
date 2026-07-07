@@ -5,7 +5,7 @@ test("AC-005-a: The greeting from the API response is displayed on the web page"
   await page.goto("/");
   await page.locator("input").fill("Alice");
   await page.getByRole("button", { name: "Say Hello" }).click();
-  const greeting = page.getByRole("status");
+  const greeting = page.locator(".greeting");
   await expect(greeting).toBeVisible();
   await expect(greeting).toHaveText("Hello, Alice!");
 });
