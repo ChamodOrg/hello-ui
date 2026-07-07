@@ -34,7 +34,7 @@ export default function App() {
         />
       </label>{" "}
       <button onClick={sayHello}>Say Hello</button>
-      {greeting && <p role="status">{greeting}</p>}
+      {greeting && <p className="greeting">{greeting}</p>}
       {error && <p role="alert">{error}</p>}
     </main>
   );
