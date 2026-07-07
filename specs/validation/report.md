@@ -1,15 +1,15 @@
 # Validation report
 
-- **Issue:** #1
-- **Commit:** 20466ab105f5291c312ade2052319f8f9e179af1
-- **Generated:** 2026-07-06T18:05:33.635Z
+- **Issue:** #9
+- **Commit:** 1f3744c845d4d9eec6bd6c8021a799a5e35e3356
+- **Generated:** 2026-07-06T18:28:00.520Z
 - **Playwright:** 1.61.1
 
 ## Summary
 
 | Method | Total | Pass | Fail | Not run |
 |---|---|---|---|---|
-| e2e | 10 | 9 | 1 | 0 |
+| e2e | 10 | 10 | 0 | 0 |
 | manual (human checklist) | 0 | — | — | — |
 | scenario (not validated) | 0 | — | — | — |
 
@@ -24,32 +24,15 @@
 | AC-004-a | The API response is valid JSON | ✅ pass | `tests/e2e/specs/AC-004-a.spec.ts` | — |
 | AC-004-b | The API response contains a 'message' field | ✅ pass | `tests/e2e/specs/AC-004-b.spec.ts` | — |
 | AC-005-a | The greeting from the API response is displayed on the web page | ✅ pass | `tests/e2e/specs/AC-005-a.spec.ts` | — |
-| AC-006-a | Clicking the button with an empty text box results in a greeting of 'Welcome, Stranger!' | ❌ fail | `tests/e2e/specs/AC-006-a.spec.ts` | — |
+| AC-006-a | Clicking the button with an empty text box results in a greeting of 'Hello, World!' | ✅ pass | `tests/e2e/specs/AC-006-a.spec.ts` | — |
 | AC-007-a | The API provides a single endpoint for greeting requests | ✅ pass | `tests/e2e/specs/AC-007-a.spec.ts` | — |
 | AC-008-a | API requests succeed without providing authentication credentials | ✅ pass | `tests/e2e/specs/AC-008-a.spec.ts` | — |
 
-## Failures
+## Healing log
 
-### AC-006-a — Clicking the button with an empty text box results in a greeting of 'Welcome, Stranger!'
-
-Spec: `tests/e2e/specs/AC-006-a.spec.ts`
-Location: `AC-006-a.spec.ts:4`
-
-```
-Error: expect(locator).toHaveText(expected) failed
-
-Locator:  getByRole('status')
-Expected: "Welcome, Stranger!"
-Received: "Hello, World!"
-Timeout:  10000ms
-
-Call log:
-  - Expect "toHaveText" with timeout 10000ms
-  - waiting for getByRole('status')
-    24 × locator resolved to <p role="status">Hello, World!</p>
-       - unexpected value "Hello, World!"
-
-```
+| Criterion | Classification | Change | Commit |
+|---|---|---|---|
+| — | — | — | — |
 
 ## Warnings
 

@@ -80,7 +80,7 @@
           "id": "AC-006-a",
           "must": "Clicking the button with an empty text box results in a greeting of 'Hello, World!'",
           "method": "e2e",
-          "covered": false
+          "covered": true
         }
       ]
     },
